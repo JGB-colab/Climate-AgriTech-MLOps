@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "climate-agritech-mlops"
 version = "0.1.0"
-description = "Um pipeline de MLOps com componentes independentes."
+description = "Pipeline de MLOps"
 
 readme = "README.md"
 # Continuamos a definir os pacotes principais
