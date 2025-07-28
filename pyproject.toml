@@ -3,7 +3,6 @@ name = "climate-agritech-mlops"
 version = "0.1.0"
 description = "Um pipeline de MLOps com componentes independentes."
 
-
 readme = "README.md"
 # Continuamos a definir os pacotes principais
 packages = [
