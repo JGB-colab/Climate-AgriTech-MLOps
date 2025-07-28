@@ -158,6 +158,74 @@ def treinar_e_avaliar_modelo_final(best_params, X_train_proc, y_train, X_val_pro
     return modelo_final
 
 modelo_final = treinar_e_avaliar_modelo_final(best_params, X_train_proc, y_train, X_val_proc, y_val, X_test_proc, y_test)
+import xgboost as xgb
+from sklearn.model_selection import RandomizedSearchCV, KFold
+from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
+import numpy as np
+import joblib
+
+def treinar_xgboost(X_train_proc, y_train, X_val_proc, y_val, X_test_proc, y_test):
+    
+    # 1. Busca de hiperparâmetros
+    print("\n🔍 Iniciando busca de hiperparâmetros para XGBoost...")
+    
+    param_dist = {
+        'n_estimators': [100, 200, 300, 500],
+        'max_depth': [3, 4, 5, 6, 7],
+        'learning_rate': [0.001,0.0001,0.01]
+    }
+
+    model = xgb.XGBRegressor(
+        objective='reg:squarederror',
+        random_state=42,
+        n_jobs=-1,
+        early_stopping_rounds=10,
+        tree_method='hist'
+    )
+
+    kfold = KFold(n_splits=5, shuffle=True, random_state=42)
+    search = RandomizedSearchCV(
+        model,
+        param_dist,
+        n_iter=20,
+        cv=kfold,
+        scoring='neg_mean_absolute_error',
+        random_state=42
+    )
+
+    search.fit(X_train_proc, y_train, eval_set=[(X_val_proc, y_val)], verbose=False)
+    
+    best_params = search.best_params_
+    print(f"\n✅ Melhores parâmetros encontrados:\n{best_params}")
+    print(f"Melhor MAE: {-search.best_score_:.4f}")
+
+    # 2. Treino do modelo final
+    print("\n🏋️ Treinando modelo final XGBoost com todos os dados...")
+    
+    X_full = np.vstack((X_train_proc, X_val_proc))
+    y_full = np.concatenate((y_train, y_val))
+
+    modelo_final = xgb.XGBRegressor(
+        **best_params,
+        objective='reg:squarederror',
+        random_state=42,
+        n_jobs=-1
+    )
+
+    modelo_final.fit(X_full, y_full, eval_set=[(X_val_proc, y_val)], verbose=False)
+
+    # 3. Avaliação no conjunto de teste
+    y_pred = modelo_final.predict(X_test_proc)
+
+    print("\n📊 Métricas Finais no Teste:")
+    print(f"MAE: {mean_absolute_error(y_test, y_pred):.4f}")
+    print(f"RMSE: {np.sqrt(mean_squared_error(y_test, y_pred)):.4f}")
+    print(f"R²: {r2_score(y_test, y_pred):.4f}")
+
+    return modelo_final
+
+
+modelo_xgb = treinar_xgboost(X_train_proc, y_train, X_val_proc, y_val, X_test_proc, y_test)
 
 def salvar_artefatos(modelo, preprocessor):
     """
