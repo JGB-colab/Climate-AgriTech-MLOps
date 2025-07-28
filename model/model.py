@@ -1,12 +1,14 @@
 import joblib
 import numpy as np
 import pandas as pd
-from sklearn.model_selection import train_test_split, RandomizedSearchCV
+from sklearn.model_selection import train_test_split, RandomizedSearchCV,KFold
 from sklearn.preprocessing import StandardScaler, OneHotEncoder
 from sklearn.compose import ColumnTransformer
 from sklearn.pipeline import Pipeline
 from sklearn.ensemble import RandomForestRegressor
-from sklearn.metrics import mean_absolute_error, mean_squared_error
+from sklearn.metrics import mean_absolute_error, mean_squared_error,r2_score
+import xgboost as xgb
+
 #fgas
 def dividir_dados_em_conjuntos(df: pd.DataFrame):
     """
@@ -158,11 +160,7 @@ def treinar_e_avaliar_modelo_final(best_params, X_train_proc, y_train, X_val_pro
     return modelo_final
 
 modelo_final = treinar_e_avaliar_modelo_final(best_params, X_train_proc, y_train, X_val_proc, y_val, X_test_proc, y_test)
-import xgboost as xgb
-from sklearn.model_selection import RandomizedSearchCV, KFold
-from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-import numpy as np
-import joblib
+
 
 def treinar_xgboost(X_train_proc, y_train, X_val_proc, y_val, X_test_proc, y_test):
     
