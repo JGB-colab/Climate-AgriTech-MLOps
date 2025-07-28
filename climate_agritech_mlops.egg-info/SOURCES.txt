@@ -1,0 +1,13 @@
+README.md
+setup.py
+climate_agritech_mlops.egg-info/PKG-INFO
+climate_agritech_mlops.egg-info/SOURCES.txt
+climate_agritech_mlops.egg-info/dependency_links.txt
+climate_agritech_mlops.egg-info/top_level.txt
+dags/__init__.py
+dags/dag_simples.py
+dags/dags.py
+data/__init__.py
+data/pipeline.py
+model/__init__.py
+model/model.py

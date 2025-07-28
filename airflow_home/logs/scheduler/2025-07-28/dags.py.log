@@ -1,0 +1,49 @@
+[2025-07-28T13:45:38.912-0300] {processor.py:161} INFO - Started process (PID=8710) to work on /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:45:38.915-0300] {processor.py:830} INFO - Processing file /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py for tasks to queue
+[2025-07-28T13:45:38.918-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:45:38.916-0300] {dagbag.py:545} INFO - Filling up the DagBag from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:45:45.693-0300] {processor.py:840} INFO - DAG(s) 'climate_agritech_pipeline_final' retrieved from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:45:48.305-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:45:48.303-0300] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T13:45:48.342-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:45:48.340-0300] {dag.py:3954} INFO - Setting next_dagrun for climate_agritech_pipeline_final to 2025-07-28 00:00:00+00:00, run_after=2025-07-29 00:00:00+00:00
+[2025-07-28T13:45:48.479-0300] {processor.py:183} INFO - Processing /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py took 9.583 seconds
+[2025-07-28T13:48:40.081-0300] {processor.py:161} INFO - Started process (PID=8815) to work on /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:48:40.099-0300] {processor.py:830} INFO - Processing file /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py for tasks to queue
+[2025-07-28T13:48:40.106-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:48:40.103-0300] {dagbag.py:545} INFO - Filling up the DagBag from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:48:50.823-0300] {processor.py:840} INFO - DAG(s) 'climate_agritech_pipeline_final' retrieved from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:48:50.916-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:48:50.912-0300] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T13:48:50.979-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:48:50.976-0300] {dag.py:3954} INFO - Setting next_dagrun for climate_agritech_pipeline_final to 2025-07-28 00:00:00+00:00, run_after=2025-07-29 00:00:00+00:00
+[2025-07-28T13:48:51.159-0300] {processor.py:183} INFO - Processing /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py took 11.117 seconds
+[2025-07-28T13:51:44.105-0300] {processor.py:161} INFO - Started process (PID=8927) to work on /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:51:44.110-0300] {processor.py:830} INFO - Processing file /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py for tasks to queue
+[2025-07-28T13:51:44.119-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:51:44.115-0300] {dagbag.py:545} INFO - Filling up the DagBag from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:51:55.682-0300] {processor.py:840} INFO - DAG(s) 'climate_agritech_pipeline_final' retrieved from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:51:55.764-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:51:55.761-0300] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T13:51:55.828-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:51:55.825-0300] {dag.py:3954} INFO - Setting next_dagrun for climate_agritech_pipeline_final to 2025-07-28 00:00:00+00:00, run_after=2025-07-29 00:00:00+00:00
+[2025-07-28T13:51:56.018-0300] {processor.py:183} INFO - Processing /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py took 11.954 seconds
+[2025-07-28T13:54:45.769-0300] {processor.py:161} INFO - Started process (PID=9032) to work on /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:54:45.777-0300] {processor.py:830} INFO - Processing file /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py for tasks to queue
+[2025-07-28T13:54:45.787-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:54:45.783-0300] {dagbag.py:545} INFO - Filling up the DagBag from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:54:56.396-0300] {processor.py:840} INFO - DAG(s) 'climate_agritech_pipeline_final' retrieved from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:54:56.482-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:54:56.480-0300] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T13:54:56.541-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:54:56.538-0300] {dag.py:3954} INFO - Setting next_dagrun for climate_agritech_pipeline_final to 2025-07-28 00:00:00+00:00, run_after=2025-07-29 00:00:00+00:00
+[2025-07-28T13:54:56.720-0300] {processor.py:183} INFO - Processing /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py took 10.987 seconds
+[2025-07-28T13:57:12.906-0300] {processor.py:161} INFO - Started process (PID=9141) to work on /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:57:12.909-0300] {processor.py:830} INFO - Processing file /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py for tasks to queue
+[2025-07-28T13:57:12.912-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:57:12.911-0300] {dagbag.py:545} INFO - Filling up the DagBag from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:57:16.699-0300] {processor.py:840} INFO - DAG(s) 'climate_agritech_pipeline_final' retrieved from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:57:16.736-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:57:16.734-0300] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T13:57:16.769-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:57:16.768-0300] {dag.py:3954} INFO - Setting next_dagrun for climate_agritech_pipeline_final to 2025-07-28 00:00:00+00:00, run_after=2025-07-29 00:00:00+00:00
+[2025-07-28T13:57:16.868-0300] {processor.py:183} INFO - Processing /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py took 3.977 seconds
+[2025-07-28T13:58:55.261-0300] {processor.py:161} INFO - Started process (PID=9223) to work on /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:58:55.267-0300] {processor.py:830} INFO - Processing file /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py for tasks to queue
+[2025-07-28T13:58:55.276-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:58:55.272-0300] {dagbag.py:545} INFO - Filling up the DagBag from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:59:05.974-0300] {processor.py:840} INFO - DAG(s) 'climate_agritech_pipeline_final' retrieved from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T13:59:06.046-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:59:06.043-0300] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T13:59:06.105-0300] {logging_mixin.py:188} INFO - [2025-07-28T13:59:06.103-0300] {dag.py:3954} INFO - Setting next_dagrun for climate_agritech_pipeline_final to 2025-07-28 00:00:00+00:00, run_after=2025-07-29 00:00:00+00:00
+[2025-07-28T13:59:06.268-0300] {processor.py:183} INFO - Processing /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py took 11.048 seconds
+[2025-07-28T14:00:58.741-0300] {processor.py:161} INFO - Started process (PID=9317) to work on /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T14:00:58.743-0300] {processor.py:830} INFO - Processing file /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py for tasks to queue
+[2025-07-28T14:00:58.746-0300] {logging_mixin.py:188} INFO - [2025-07-28T14:00:58.745-0300] {dagbag.py:545} INFO - Filling up the DagBag from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T14:01:02.554-0300] {processor.py:840} INFO - DAG(s) 'climate_agritech_pipeline_final' retrieved from /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py
+[2025-07-28T14:01:02.592-0300] {logging_mixin.py:188} INFO - [2025-07-28T14:01:02.591-0300] {dag.py:3096} INFO - Sync 1 DAGs
+[2025-07-28T14:01:02.627-0300] {logging_mixin.py:188} INFO - [2025-07-28T14:01:02.625-0300] {dag.py:3954} INFO - Setting next_dagrun for climate_agritech_pipeline_final to 2025-07-28 00:00:00+00:00, run_after=2025-07-29 00:00:00+00:00
+[2025-07-28T14:01:03.134-0300] {processor.py:183} INFO - Processing /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/dags/dags.py took 4.409 seconds

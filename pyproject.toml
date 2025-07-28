@@ -1,0 +1,51 @@
+[tool.poetry]
+name = "climate-agritech-mlops"
+version = "0.1.0"
+description = "Um pipeline de MLOps com componentes independentes."
+
+
+readme = "README.md"
+# Continuamos a definir os pacotes principais
+packages = [
+    { include = "data" },
+    { include = "model" },
+    { include = "api.py" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.12" 
+pandas = "*"
+joblib = "*"
+
+[tool.poetry.group.data.dependencies]
+# Dependências específicas para o pacote 'data'
+mlcroissant = { version = "*", extras = ["kaggle"] }
+
+
+[tool.poetry.group.model.dependencies]
+# Dependências pacote 'model'
+scikit-learn = "*"
+xgboost = "*"
+pyarrow = "*"
+
+[tool.poetry.group.api.dependencies]
+# Dependências API
+flask = "*"
+gunicorn = "*"
+pydantic ="*"
+
+[tool.poetry.group.demo.dependencies]
+# Dependências script de demonstração
+requests = "*"
+
+[tool.poetry.group.dev.dependencies]
+# Dependências para desenvolvimento
+pytest = "*"
+flake8 = "*"
+black = "*"
+
+# ==========================================================
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

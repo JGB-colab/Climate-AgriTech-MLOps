@@ -1,0 +1,36 @@
+[2025-07-28T12:58:42.899-0300] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-07-28T12:58:43.180-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: climate_agritech_pipeline_final.etl_and_preprocess_task manual__2025-07-28T15:57:20.716420+00:00 [queued]>
+[2025-07-28T12:58:43.224-0300] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: climate_agritech_pipeline_final.etl_and_preprocess_task manual__2025-07-28T15:57:20.716420+00:00 [queued]>
+[2025-07-28T12:58:43.228-0300] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-07-28T12:58:43.327-0300] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): etl_and_preprocess_task> on 2025-07-28 15:57:20.716420+00:00
+[2025-07-28T12:58:43.361-0300] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'climate_agritech_pipeline_final', 'etl_and_preprocess_task', 'manual__2025-07-28T15:57:20.716420+00:00', '--job-id', '5', '--raw', '--subdir', 'DAGS_FOLDER/dags.py', '--cfg-path', '/tmp/tmpn7i1cnt_']
+[2025-07-28T12:58:43.368-0300] {standard_task_runner.py:91} INFO - Job 5: Subtask etl_and_preprocess_task
+[2025-07-28T12:58:43.376-0300] {logging_mixin.py:188} WARNING - /mnt/c/Users/Usuario/Downloads/Automações/Climate-AgriTech-MLOps/.venv/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:61 DeprecationWarning: This process (pid=8232) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-07-28T12:58:43.380-0300] {standard_task_runner.py:63} INFO - Started process 8273 to run task
+[2025-07-28T12:58:43.640-0300] {task_command.py:426} INFO - Running <TaskInstance: climate_agritech_pipeline_final.etl_and_preprocess_task manual__2025-07-28T15:57:20.716420+00:00 [running]> on host DESKTOP-2IINLNG.localdomain
+[2025-07-28T12:58:44.041-0300] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='climate_agritech_pipeline_final' AIRFLOW_CTX_TASK_ID='etl_and_preprocess_task' AIRFLOW_CTX_EXECUTION_DATE='2025-07-28T15:57:20.716420+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-07-28T15:57:20.716420+00:00'
+[2025-07-28T12:58:44.048-0300] {taskinstance.py:430} INFO - ::endgroup::
+[2025-07-28T13:00:02.055-0300] {logging_mixin.py:188} INFO - --- Iniciando Tarefa: Extração e Limpeza (Otimizada) ---
+[2025-07-28T13:00:04.620-0300] {rdf.py:81} WARNING - WARNING: The JSON-LD `@context` is not standard. Refer to the official @context (e.g., from the example datasets in https://github.com/mlcommons/croissant/tree/main/datasets/1.0). The different keys are: {'samplingRate', 'examples', 'rai'}
+[2025-07-28T13:00:06.000-0300] {datasets.py:41} WARNING - Found the following 1 warning(s) during the validation:
+  -  [Metadata(🌍 Climate Change Impact on Agriculture 🌱)] Property "http://mlcommons.org/croissant/citeAs" is recommended, but does not exist.
+[2025-07-28T13:00:06.007-0300] {logging_mixin.py:188} INFO - Iniciando processamento em chunks de 50000 linhas...
+[2025-07-28T13:00:06.016-0300] {execute.py:118} INFO - Executing InitOperation(_:Ne77c1b1a439f42ff9e8f021eb2b7fd84)
+[2025-07-28T13:00:06.020-0300] {init.py:16} INFO - Setting up generation for dataset: _:Ne77c1b1a439f42ff9e8f021eb2b7fd84
+[2025-07-28T13:00:06.024-0300] {execute.py:118} INFO - Executing Download(archive.zip)
+[2025-07-28T13:00:06.093-0300] {download.py:234} INFO - File https://www.kaggle.com/api/v1/datasets/download/waqi786/climate-change-impact-on-agriculture?datasetVersionNumber=1 is downloaded to /home/john/.cache/croissant/download/croissant-6c1107641bdbe55ade45163295cb3b8e545874a3cfc45d57573a58587bebe342
+[2025-07-28T13:00:06.096-0300] {execute.py:118} INFO - Executing Extract(archive.zip)
+[2025-07-28T13:00:06.102-0300] {extract.py:55} INFO - Found directory where data is extracted: /home/john/.cache/croissant/extract/6c1107641bdbe55ade45163295cb3b8e545874a3cfc45d57573a58587bebe342
+[2025-07-28T13:00:06.106-0300] {execute.py:107} INFO - Executing Read(climate_change_impact_on_agriculture_2024.csv_fileobject)
+[2025-07-28T13:00:12.065-0300] {logging_mixin.py:188} INFO - Processando o chunk final...
+[2025-07-28T13:00:12.154-0300] {logging_mixin.py:188} INFO - ✅ Todos os chunks foram processados. Concatenando...
+[2025-07-28T13:00:12.158-0300] {logging_mixin.py:188} INFO - ✅ Limpeza e renomeação concluídas.
+[2025-07-28T13:00:12.168-0300] {logging_mixin.py:188} INFO - --- Iniciando Tarefa: Divisão dos Dados ---
+[2025-07-28T13:00:12.204-0300] {logging_mixin.py:188} INFO - --- Iniciando Tarefa: Pré-processamento ---
+[2025-07-28T13:00:12.352-0300] {logging_mixin.py:188} INFO - ✅ Dados normalizados e codificados.
+[2025-07-28T13:00:12.545-0300] {python.py:237} INFO - Done. Returned value was: None
+[2025-07-28T13:00:12.549-0300] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-07-28T13:00:12.583-0300] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=climate_agritech_pipeline_final, task_id=etl_and_preprocess_task, run_id=manual__2025-07-28T15:57:20.716420+00:00, execution_date=20250728T155720, start_date=20250728T155843, end_date=20250728T160012
+[2025-07-28T13:00:12.942-0300] {local_task_job_runner.py:240} INFO - Task exited with return code 0
+[2025-07-28T13:00:13.038-0300] {taskinstance.py:3503} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2025-07-28T13:00:13.068-0300] {local_task_job_runner.py:222} INFO - ::endgroup::
